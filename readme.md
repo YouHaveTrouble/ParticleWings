@@ -12,3 +12,4 @@ TODO
 - [ ] rewrite commands with paper's brigadier api
 - [ ] rewrite guis to be more maintainable
 - [ ] use minimessage instead of chat color
+- [ ] use database instead of flatfile
