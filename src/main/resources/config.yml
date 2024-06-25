@@ -1,5 +1,5 @@
 #-------------------------------------------------#
-#                 CustomWings                     #
+#                 ParticleWings                   #
 #                 Main config                     #
 #-------------------------------------------------#
 
@@ -7,10 +7,10 @@
 # To configure wings or add you own wings, edit or add the files in the 'wings' folder.
 
 # The main command of the plugin, you will have to restart your server when changing this.
-commandName: "customwings"
+commandName: "ParticleWings"
 commandAliases:
   - "wings"
-  - "cw"
+  - "pw"
   - "w"
 
 # Disable the check for new versions of this plugin on spigot at startup.
@@ -55,7 +55,7 @@ wingSelectMenu:
     materialOFF: GREEN_STAINED_GLASS
     slot: 52
 
-  # If pages is bigger then 1, it will show the navigation items.
+  # If pages is bigger than 1, it will show the navigation items.
   navigationItem:
     next:
       name: "&9Next Page"

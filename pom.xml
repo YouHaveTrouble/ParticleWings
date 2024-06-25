@@ -4,15 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>tigeax.customwings</groupId>
-    <artifactId>CustomWings</artifactId>
-    <version>4.3.0</version>
+    <groupId>me.youhavetrouble.particlewings</groupId>
+    <artifactId>ParticleWings</artifactId>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>CustomWings</name>
+    <name>ParticleWings</name>
 
     <properties>
-      <java.version>1.8</java.version>
+      <java.version>21</java.version>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -21,7 +21,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.1</version>
+            <version>3.8.1</version>
             <configuration>
                 <source>${java.version}</source>
                 <target>${java.version}</target>
@@ -30,15 +30,7 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-shade-plugin</artifactId>
-            <version>3.1.0</version>
-            <configuration>
-              <relocations>
-                <relocation>
-                  <pattern>org.bstats</pattern>
-                  <shadedPattern>tigeax.customwings</shadedPattern>
-                </relocation>
-              </relocations>
-            </configuration>
+            <version>3.6.0</version>
             <executions>
               <execution>
                 <phase>package</phase>
@@ -59,8 +51,8 @@
 
     <repositories>
         <repository>
-            <id>spigotmc-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <id>papermc-repo</id>
+            <url>https://papermc.io/repo/repository/maven-public/</url>
         </repository>
         <repository>
             <id>bukkit-repo</id>
@@ -74,17 +66,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.20.1-R0.1-SNAPSHOT</version>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
+            <version>1.20.6-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.bstats</groupId>
-            <artifactId>bstats-bukkit</artifactId>
-            <version>2.2.1</version>
-            <scope>compile</scope>
-          </dependency>
         <dependency>
             <groupId>com.github.Realizedd</groupId>
             <artifactId>TokenManager</artifactId>

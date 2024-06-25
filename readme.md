@@ -1,42 +1,14 @@
-<h1>Custom Wings</h1>
+<h1>ParticleWings</h1>
 
-[Tigeax's CustomWings Plugin]
+This is a fork of [Tigeax's CustomWings Plugin](https://www.spigotmc.org/resources/customwings-1-13-1-16-1.59912/).
 
-[Tigeax's CustomWings Plugin]: https://www.spigotmc.org/resources/customwings-1-13-1-16-1.59912/
+This is a work in progress honest try at updating the plugin for modern versions of Minecraft.
 
-[![](https://jitpack.io/v/tigeax/customwings.svg)](https://jitpack.io/#tigeax/customwings)
+TODO
 
-
-## Maven Dependency:
-
-
-
-	<repositories>
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
-	</repositories>
-
----
-
-    <dependency>
-	    <groupId>com.github.Tigeax</groupId>
-	    <artifactId>CustomWings</artifactId>
-	    <version>master-815be0cbab-1</version>
-	</dependency>
-	
-## Gradle:
-
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
-	
----
-	
-    dependencies {
-                implementation 'com.github.Tigeax:CustomWings:master-815be0cbab-1'
-        }
+- [x] update build to 1.21 and java 21
+- [x] remove most cw branding
+- [x] remove code for components that will be rewritten
+- [ ] rewrite commands with paper's brigadier api
+- [ ] rewrite guis to be more maintainable
+- [ ] use minimessage instead of chat color
